@@ -1,0 +1,39 @@
+header {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.title_ex{
+    text-decoration: underline;
+}
+
+code {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.group-input{
+    margin-top: 10px;
+}

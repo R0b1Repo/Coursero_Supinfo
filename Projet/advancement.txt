@@ -1,0 +1,52 @@
+CORRECTION :
+    Ne pas envoyer direct au client mais noter -1 et ajouter le message d'erreur
+
+
+Python correction ex 1 : ~OK
+Python correction ex 2 : ~OK
+Java correction ex 1 : ~OK
+Java correction ex 2 : ~OK
+
+php python correction : ~OK need to get file from db and not hardcode file name
+php java correction : TODO
+
+DB:
+    Create db : OK
+    Add user when submit : ~OK
+    Delete file after correcting: TODO
+    Only save better result : TODO
+
+PHP:
+    correction sujet
+
+CRON:
+    Si aucun en attente
+        faire SQL
+        prendre la 1 ligne
+        CORRIGER
+
+SQL:
+    Select language, exercice from submission where grade is null order by id;
+    add user to table : OK
+    update grade after correction : OK
+    get id and file to correct : OK
+
+    field 'original_name': original name of file
+
+
+CORRIGER:
+    call correct_php
+
+CORRECT_php:
+    if result_sql['language']=="python"
+        $file = "correct_".result_sql['language']."_".result_sql['exercice'].".py"
+    else
+        $file = "correct_".result_sql['language']."_".result_sql['exercice'].".java"
+
+
+RULES:
+    Revoir le descriptif pour java
+
+
+PYTHON:
+    import args[0] -> voir comment faire
