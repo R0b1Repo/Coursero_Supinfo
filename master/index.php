@@ -1,3 +1,7 @@
+<?php
+    require "./db_cmd.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +20,7 @@
         require "./exercices.php"
     ?>
 
-    <form class="form">
+    <form class="form" method="POST" action="add_user()">
         <fieldset class="fieldset-form-1">
             <legend class="legend-form-1">Submit your work here</legend>
 
@@ -54,7 +58,7 @@
         </fieldset>
     </form>
 
-    <form class="result_form">
+    <form class="result_form" method="POST" action="./display_result.php">
         <fieldset class="fieldset-form-2">
             <legend class="legeng-form-1">Get you results here</legend>
 
@@ -70,6 +74,3 @@
     </form>
 </body>
 </html>
-<?php 
-    require "./correct_python_1.php";
-?>

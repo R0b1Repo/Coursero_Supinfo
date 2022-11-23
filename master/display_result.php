@@ -1,7 +1,7 @@
 <?php
 require_once "./db_cmd.php";
 
-$values = get_user_infos($_POST['name']);
+$values = get_user_infos($_POST['result_name']);
 
 ?>
 <link rel="stylesheet" href="style.css">
